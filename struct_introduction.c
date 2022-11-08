@@ -78,7 +78,7 @@ int main(void)
 	printf("DAL: %d. x = %d,y = %d\n", wanted_num + 1, new_coords.x, new_coords.y);
 	*/
 
-	/*
+	/* //idk what's this, stole it from other group's project
 	srand(time(0));
 	for (int i = 0; i < N; i++) 
 	{
@@ -87,7 +87,7 @@ int main(void)
 		/*if (n < D[i].x*D[i].x + D[i].y*D[i].y) 
 		{
 			n = D[i].x*D[i].x + D[i].y*D[i].y;
-			K = D[i];
+			new_coords = D[i];
 			j = i;
 		}
 
@@ -100,10 +100,10 @@ int main(void)
 			if ((D[i].x - D[j].x)*(D[i].x - D[j].x) + (D[i].y - D[j].y)*(D[i].y - D[j].y) > n)
 			{
 				n = (D[i].x - D[j].x)*(D[i].x - D[j].x) + (D[i].y - D[j].y)*(D[i].y - D[j].y);
-				K1 = D[i];
-				K2 = D[j];
-				res = i + 1;
-				res1 = j + 1;
+				first_coords = D[i];
+				second_coords = D[j];
+				first_wanted_num = i + 1;
+				second_wanted_num = j + 1;
 			 }
 		}
 	}
